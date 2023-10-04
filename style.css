@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100px 100px 85% 100px;
+    gap: 10px;
+}
+h1, a{
+    color: white;
+}
+.logo{
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-height: 100px;
+}
+.bakgrund{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+aside{
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+nav{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+main{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+footer{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+}
