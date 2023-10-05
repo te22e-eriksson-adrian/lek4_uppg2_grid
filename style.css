@@ -13,6 +13,7 @@ h1, a{
     grid-column: 1/2;
     grid-row: 1/2;
     max-height: 100px;
+    justify-self: center;
 }
 .bakgrund{
     background-image: url(./background.jpg);
@@ -32,18 +33,34 @@ nav{
     grid-column: 2/3;
     grid-row: 2/3;
 }
-li{
+ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     text-decoration: none;
+    gap: 50px;
 }
 main{
     grid-column: 2/3;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-height: 200px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 footer{
     grid-column: 2/3;
     grid-row: 4/5;
     text-align: center;
+}
+.album{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 1px;
 }
